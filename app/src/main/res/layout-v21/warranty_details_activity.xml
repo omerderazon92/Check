@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundColor">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/White"
+        android:elevation="@dimen/cardview_default_elevation">
+
+
+        <ScrollView
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/progressBar2"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/warrantyDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border"
+            android:progressDrawable="@drawable/custom_progress_bar" />
+
+        <TextView
+            android:id="@+id/daysLeftTextConstant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/progressBar2"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:text="זמן שנותר לסיום האחריות:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/itemandcompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/daysLeftTextConstant"
+            android:layout_below="@+id/image"
+            android:layout_centerInParent="true"
+            android:text="itemAndCompany"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/mainLayout"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/findClosetBranches"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_button"
+            android:text="סניפים סביבך"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sendToYourFriend"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/findClosetBranches"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_button"
+            android:text="שלח לחבר"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

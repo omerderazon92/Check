@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#60C6D2</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backGroundColor">#F1F1F1</color>
+    <color name="White">#FFFFFF</color>
+    <color name="colorGreenForProgressBar">#00FA9A</color>
+    <color name="colorRedForProgressBar">#FF0000</color>
+    <color name="Gold">#FFE640</color>
+    <color name="FixesColor">#151B54</color>
+</resources>

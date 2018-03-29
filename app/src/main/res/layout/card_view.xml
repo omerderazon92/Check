@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainCardView"
+    android:layout_width="match_parent"
+    android:layout_height="92dp">
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <View
+            android:id="@+id/line25"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/backGroundColor"></View>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/line25"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border"
+            android:progressDrawable="@drawable/custom_progress_bar" />
+
+        <TextView
+            android:id="@+id/nameOfProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="13dp"
+            android:text="product"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/daysLeftTextConstant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line25"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="0.75dp"
+            android:text="זמן שנותר לסיום האחריות:" />
+
+        <TextView
+            android:id="@+id/daysCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line25"
+            android:layout_marginTop="0.75dp"
+            android:layout_toLeftOf="@+id/daysLeftTextConstant"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line25"
+            android:layout_marginTop="0.75dp"
+            android:layout_toLeftOf="@id/daysCounter"
+            android:text=" ימים" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/nameOfProduct"
+            android:text="company"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/companyPicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:transitionName="profile" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

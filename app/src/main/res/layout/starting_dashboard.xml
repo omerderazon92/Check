@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/commercialPart"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/bottomPartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/commercialPart"
+        android:background="@color/backGroundColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="בחר את השירות שברצונך לקבל"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ButtonsPart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bottomPartTitle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/warrantyButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bottomPartTitle"
+                android:layout_weight="1.0"
+                android:background="@color/colorPrimary"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/myWarrantyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="תעודות האחריות שלי"
+                    android:textColor="@color/White"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/warrantyImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/myWarrantyText"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/creditButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bottomPartTitle"
+                android:layout_weight="1.0"
+                android:background="@color/Gold"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/myCcreditsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="הזיכויים שלי"
+                    android:textColor="@color/White"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/creditsImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/myCcreditsText"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/fixesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bottomPartTitle"
+                android:layout_weight="1.0"
+                android:background="@color/FixesColor"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/myFixesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="מוצרים שבתיקון"
+                    android:textColor="@color/White"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/fixesImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/myFixesText"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/swipeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/warrantyButton"
+                android:layout_weight="1.0"
+                android:background="@color/backGroundColor"
+                android:text="פתקי החלפה"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
